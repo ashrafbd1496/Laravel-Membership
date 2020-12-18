@@ -64,11 +64,19 @@ class RegisterController extends Controller
      */
     protected function create( $data)
     {
+        $unique_file_name ='avatar.jpg';
+        if ($data ->hasfile('photo')){
+            $img = $data ->file('photo');
+            $unique_file_name = md5(time().rand()).'.'.$img->getClientOriginalExtension();
+            $img->move(public_path('media/photos/users/'),$unique_file_name);
+        }
+
         return User::create([
             'name' => $data ->name,
             'uname' => $data ->uname,
             'cell' => $data ->cell,
             'email' => $data ->email,
+            'photo' => $unique_file_name,
             'password' => Hash::make($data ->password),
         ]);
     }
