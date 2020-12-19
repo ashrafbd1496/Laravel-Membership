@@ -10903,3 +10903,14 @@ a.text-dark:focus {
   }
 }
 
+.profile img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+
+}
+.profile h2{
+    margin-top:10px;
+    text-align: center;
+}
