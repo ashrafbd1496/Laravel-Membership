@@ -10,23 +10,23 @@
                 <div class="card-body">
                     <div class="profile">
                         <img src="media/photos/users/{{Auth::user() ->photo}}" alt="avatar.jgp">
-                        <h2>Ashraf Uddin</h2>
+                        <h2>{{Auth::user() ->name}}</h2>
                         <table class="table table-striped">
                             <tr>
                                 <td>Name</td>
-                                <td>Ashraf</td>
+                                <td>{{Auth::user() ->name}}</td>
                             </tr>
                             <tr>
-                                <td>Name</td>
-                                <td>Ashraf</td>
+                                <td>Username</td>
+                                <td>{{Auth::user() ->uname}}</td>
                             </tr>
                             <tr>
-                                <td>Name</td>
-                                <td>Ashraf</td>
+                                <td>Cell</td>
+                                <td>{{Auth::user() ->cell}}</td>
                             </tr>
                             <tr>
-                                <td>Name</td>
-                                <td>Ashraf</td>
+                                <td>Email</td>
+                                <td>{{Auth::user() ->email}}</td>
                             </tr>
 
                         </table>
