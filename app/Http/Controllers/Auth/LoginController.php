@@ -60,6 +60,18 @@ class LoginController extends Controller
     }
 
 
+    /**
+     * username method copied form Authenticationuser.php
+     */
+    public function username()
+    {
+        $login_data = \request() ->input('login-data');
+
+        $login_type = 'uname';
+        \request() ->merge([$login_type =>$login_data]);
+
+        return $login_type;
+    }
 
 
 
