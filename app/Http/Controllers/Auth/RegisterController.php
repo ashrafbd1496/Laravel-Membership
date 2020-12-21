@@ -38,7 +38,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('guest') ->except('showAllUser');
     }
 
     /**
@@ -80,4 +80,15 @@ class RegisterController extends Controller
             'password' => Hash::make($data ->password),
         ]);
     }
+
+    public function showAllUser(){
+        $all_user = User::latest() ->paginate(4);
+        return view('users',compact('all_user'));
+    }
+
+
+
+
+
+
 }
