@@ -67,7 +67,7 @@ class LoginController extends Controller
     {
         $login_data = \request() ->input('login-data');
 
-        $login_type = 'uname';
+        $login_type = 'cell';
         \request() ->merge([$login_type =>$login_data]);
 
         return $login_type;
