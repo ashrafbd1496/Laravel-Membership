@@ -5,7 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }} <a class="btn btn-sm btn-primary float-right" href="{{url('users')}}">All Users</a></div>
+                <div class="card-header">{{ __('Dashboard') }} <a class="btn btn-sm btn-primary float-right ml-5" href="{{url('home')}}">Profile</a><a class="btn btn-sm btn-primary float-right" href="{{route('user.dashboard')}}">Dashboard</a></div>
+
 
                 <div class="card-body">
                   <h2>All Registered Users</h2>
