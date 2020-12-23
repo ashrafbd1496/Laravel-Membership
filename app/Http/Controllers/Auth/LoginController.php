@@ -65,12 +65,25 @@ class LoginController extends Controller
      */
     public function username()
     {
-        $login_data = \request() ->input('login-data');
+        $login_data = \request()->input('login-data');
 
-        $login_type = 'cell';
-        \request() ->merge([$login_type =>$login_data]);
+        $cell = substr($login_data, 0, 2);
 
-        return $login_type;
+        if (filter_var($login_data, FILTER_VALIDATE_EMAIL)) {
+            $type = 'email';
+        } elseif ($cell =='01'){
+
+            $type = 'cell';
+        }else{
+            $type = 'uname';
+
+        }
+
+        \request() ->merge([$type =>$login_data]);
+        return $type;
+
+
+
     }
 
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6820b32b-c373-4614-ba81-dc5cabc7c9f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +169,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608207212457</updated>
       <workItem from="1608207218820" duration="12362000" />
-      <workItem from="1608357201176" duration="16138000" />
+      <workItem from="1608357201176" duration="16738000" />
+      <workItem from="1608658664229" duration="1950000" />
     </task>
     <servers />
   </component>
