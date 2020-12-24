@@ -10,22 +10,19 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Role Name</th>
+                    <th>Name</th>
+                    <th>Role</th>
                     <th>Permission</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($all_role as $role)
+                @foreach()
                 <tr>
-                    <td>{{$loop ->index +1}}</td>
-                    <td>{{$role ->name}}</td>
-                    <td>
-                        @foreach(json_decode($role ->permission) as $per)
-                            {{$per}} |
-                        @endforeach
-
-                    </td>
+                    <td>1</td>
+                    <td>Ashraf</td>
+                    <td>Admin</td>
+                    <td>Post | Role</td>
                     <td>
                         <a class="btn btn-sm btn-warning" href="">Edit</a>
                         <a class="btn btn-sm btn-danger" href="">Delete</a>

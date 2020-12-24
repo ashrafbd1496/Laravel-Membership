@@ -31,3 +31,5 @@ Route::get('users',[App\Http\Controllers\Auth\RegisterController::class, 'showAl
 Route::get('dashboard',[App\Http\Controllers\Auth\RegisterController::class, 'showDashboard']) ->name('user.dashboard');
 
 Route::resource('role', RoleController::class);
+
+Route::resource('user', UserController::class);
