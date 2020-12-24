@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 
 
@@ -28,3 +29,5 @@ Route::get('/home',[App\Http\Controllers\HomeController::class, 'index'])->name(
 Route::get('users',[App\Http\Controllers\Auth\RegisterController::class, 'showAllUser']);
 
 Route::get('dashboard',[App\Http\Controllers\Auth\RegisterController::class, 'showDashboard']) ->name('user.dashboard');
+
+Route::resource('role', RoleController::class);
