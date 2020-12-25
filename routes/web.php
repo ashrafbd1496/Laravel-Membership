@@ -33,3 +33,8 @@ Route::get('dashboard',[App\Http\Controllers\Auth\RegisterController::class, 'sh
 Route::resource('role', RoleController::class);
 
 Route::resource('user', UserController::class);
+
+Route::get('admin',[App\Http\Controllers\AdminController::class, 'loginPage']) ->name('admin.login');
+Route::get('admin-register',[App\Http\Controllers\AdminController::class, 'adminRegPage']) ->name('admin.register');
+
+Route::post('admin-register',[App\Http\Controllers\AdminController::class, 'adminRegAdmin']) ->name('admin.register');
