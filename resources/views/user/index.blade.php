@@ -4,12 +4,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h2>All Roles</h2>
-            <a href="{{route('role.create')}}" class="btn btn-sm btn-primary float-right">Add New Role</a>
+            <h2>All User</h2>
+            <a href="{{route('user.create')}}" class="btn btn-sm btn-primary float-right">Add New User</a>
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>#</th>
+                    <th>Id</th>
                     <th>Name</th>
                     <th>Role</th>
                     <th>Permission</th>
@@ -17,12 +17,17 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach()
+                @foreach($all_user as $user)
                 <tr>
-                    <td>1</td>
-                    <td>Ashraf</td>
-                    <td>Admin</td>
-                    <td>Post | Role</td>
+                    <td>{{$loop ->index+1}}</td>
+                    <td>{{$user ->name}}</td>
+                    <td>{{$user ->role ->name}}</td>
+                    <td>
+                        @foreach(json_decode($user ->role ->permission) as $per)
+                        {{$per}} |
+                        @endforeach
+                    </td>
+
                     <td>
                         <a class="btn btn-sm btn-warning" href="">Edit</a>
                         <a class="btn btn-sm btn-danger" href="">Delete</a>

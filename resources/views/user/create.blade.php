@@ -4,25 +4,37 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <h2>Role Name</h2>
-                <a href="{{route('role.index')}}" class="btn btn-sm btn-primary float-right">All Roles</a>
+                <h2>User Name</h2>
+                <a href="{{route('user.index')}}" class="btn btn-sm btn-primary float-right">All User</a>
 
-                <form action="{{route('role.store')}}" method="POST">
+                <form action="{{route('user.store')}}" method="POST">
                     @csrf
                     <div class="form-group">
-
-                        <input name="name" class="form-control" type="text" placeholder="Enter Role Name">
+                        <input name="name" class="form-control" type="text" placeholder="Enter Full Name">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Permission</label><br>
-                        <input name="per[]" value="User" class="" type="checkbox" id="User"> <label for="User">User</label>
-                        <input name="per[]" value="Role" class="" type="checkbox" id="Role"> <label for="Role">Role</label>
-                        <input name="per[]" value="Settings" class="" type="checkbox" id="Settings"> <label for="Settings">Settings</label>
-                        <input name="per[]" value="Seo" class="" type="checkbox" id="Seo"> <label for="Seo">Seo</label>
+                        <input name="uname" class="form-control" type="text" placeholder="Enter Username">
                     </div>
+                    <div class="form-group">
+                        <input name="email" class="form-control" type="text" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input name="cell" class="form-control" type="text" placeholder="Enter cell">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Role</label>
+                        <select class="form-control" name="role" id="">
+
+                            @foreach($roles as $role)
+                            <option value="{{$role ->id}}">{{$role ->name}}</option>
+                            @endforeach
+                        </select>
+
+                    </div>
+
                         <div class="form-group">
-                            <button class="btn btn-primary btn-sm" type="submit" value="Add">Add New Role</button>
+                            <button class="btn btn-primary btn-sm" type="submit" value="Add">Add New User</button>
                         </div>
                 </form>
             </div>

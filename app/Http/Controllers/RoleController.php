@@ -16,6 +16,8 @@ class RoleController extends Controller
     {
         $all_role = Role::all();
       return view('role.index',compact('all_role'));
+
+
     }
 
     /**
