@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class AdminController extends Controller
 {
+    //copied from LoginController
+    protected $redirectTo = RouteServiceProvider::ADMIN_DASH;
+
+    use AuthenticatesUsers;
     /*
   * Admin Login page show method
   * */
@@ -33,6 +40,22 @@ class AdminController extends Controller
         ]);
         return redirect()->route('admin.login');
     }
+
+
+    public function dashboard(){
+        return view('admin.dashboard');
+    }
+    //Added admin auth guard
+
+    protected function guard()
+    {
+        return Auth::guard('admin');
+    }
+
+
+
+
+
 
 
 

@@ -2,36 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6820b32b-c373-4614-ba81-dc5cabc7c9f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_25_091225_create_admins_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/UbuntuCondensed-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/82e2ae94.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/photo-1470129360498-ab39dc4e05d6.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/photo-1479659929431-4342107adfc1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/IMG_9911_copy.307195445_std.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/Piet-Olivier-photo-passport-size.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/_MG_1216.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/american-passport-photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/images (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/images.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/istockphoto-615279718-612x612.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/official-portrait-woman-red-hair-260nw-161401790.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/passport-photo-service-250x250.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/passport-photos-keene-nh-0017.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/passport2015-201507251917.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/media/img/pp_photo/woman-crop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,12 +152,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -199,7 +183,7 @@
       <updated>1608207212457</updated>
       <workItem from="1608207218820" duration="12362000" />
       <workItem from="1608357201176" duration="16738000" />
-      <workItem from="1608658664229" duration="33147000" />
+      <workItem from="1608658664229" duration="46683000" />
     </task>
     <servers />
   </component>

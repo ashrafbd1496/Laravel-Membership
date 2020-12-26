@@ -15,16 +15,21 @@
 	<div class="wrap ">
 		<div class="card shadow">
 			<div class="card-body">
-				<h2>Login</h2>
-				<form action="" method="POSt">
+				<h2>Admin Login</h2>
+
+                @if($errors ->any() )
+                    <p class="alert alert-danger">{{$errors ->first() }}<button class="close" data-dismiss ="alert">&times;</button></p>
+                    @endif
+
+				<form action="{{route('admin.login')}}" method="POSt">
                     @csrf
 					<div class="form-group">
-						<label for="">Email</label>
+						<label for="">Email / Username</label>
 						<input name="email" class="form-control" type="text">
 					</div>
                     <div class="form-group">
                         <label for="">Password</label>
-                        <input name="pass" class="form-control" type="text">
+                        <input name="password" class="form-control" type="text">
                     </div>
 
 					<div class="form-group">
@@ -33,7 +38,7 @@
 				</form>
 			</div>
             <div class="card-footer">
-                <span>Have no account ?</span><a class="card-link float-right" href="{{route('admin.register')}}">Create Account</a>
+                <span>Have no account ?</span><a class="card-link float-right" href="{{route('admin.register')}}">Admin Register</a>
             </div>
 		</div>
 	</div>

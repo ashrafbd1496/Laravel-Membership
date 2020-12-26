@@ -35,6 +35,8 @@ Route::resource('role', RoleController::class);
 Route::resource('user', UserController::class);
 
 Route::get('admin',[App\Http\Controllers\AdminController::class, 'loginPage']) ->name('admin.login');
+Route::post('admin',[App\Http\Controllers\AdminController::class, 'login']) ->name('admin.login');
 Route::get('admin-register',[App\Http\Controllers\AdminController::class, 'adminRegPage']) ->name('admin.register');
 
 Route::post('admin-register',[App\Http\Controllers\AdminController::class, 'adminRegAdmin']) ->name('admin.register');
+Route::get('admin-dashboard',[App\Http\Controllers\AdminController::class, 'dashboard']) ->name('admin.dash');

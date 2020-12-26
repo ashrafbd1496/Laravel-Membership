@@ -15,7 +15,7 @@
 	<div class="wrap ">
 		<div class="card shadow">
 			<div class="card-body">
-				<h2>Register</h2>
+				<h2>Admin Register</h2>
 
 				<form action="{{route('admin.register')}}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -50,7 +50,7 @@
 				</form>
 			</div>
             <div class="card-footer">
-                <span>Already have account ?</span><a class=" card-link float-right" href="{{route('admin.login')}}">Login</a>
+                <span>Already have account ?</span><a class=" card-link float-right" href="{{route('admin.login')}}">Admin Login</a>
             </div>
 		</div>
 	</div>
